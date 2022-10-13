@@ -348,3 +348,4 @@ def write_easy_excel():
     # 保存表格，并命名
     n_time = datetime.datetime.now().strftime('%Y.%m.%d_%H.%M.%S')
     workbook.save(f'{n_time}.student_info.xls')
+    messagebox.showinfo(title='提示', message=f"导出成功，请在当前目录查看 {n_time}.student_info.xls")
