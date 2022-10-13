@@ -246,6 +246,7 @@ class CountFrame(Frame):
         Button(self, text='各科最低分', font=font.Font(size=12), command=self.bad_score).grid(row=5, stick=W, pady=10)
 
     def sum_score(self):
+        plt.close()
         plt.rcParams['font.sans-serif'] = ['SimHei']
         plt.rcParams['axes.unicode_minus'] = False
         if len(self.result) == 0:
@@ -261,6 +262,7 @@ class CountFrame(Frame):
         plt.show()
 
     def avg_score(self):
+        plt.close()
         plt.rcParams['font.sans-serif'] = ['SimHei']
         plt.rcParams['axes.unicode_minus'] = False
         if len(self.result) == 0:
@@ -281,6 +283,7 @@ class CountFrame(Frame):
         plt.show()
 
     def best_score(self):
+        plt.close()
         plt.rcParams['font.sans-serif'] = ['SimHei']
         plt.rcParams['axes.unicode_minus'] = False
         if len(self.result) == 0:
@@ -301,6 +304,7 @@ class CountFrame(Frame):
         plt.show()
 
     def bad_score(self):
+        plt.close()
         plt.rcParams['font.sans-serif'] = ['SimHei']
         plt.rcParams['axes.unicode_minus'] = False
         if len(self.result) == 0:
